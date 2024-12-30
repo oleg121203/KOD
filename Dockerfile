@@ -51,6 +51,13 @@ RUN poetry install --no-root && \
     poetry run pip install google-generativeai && \
     npm install
 
+# Копирование исходного кода
+COPY src/ /app/src/
+COPY tests/ /app/tests/
+
+# Запуск тестов
+RUN poetry run pytest tests/test_gemini.py -v
+
 # Настройка Git с поддержкой UTF-8
 RUN git config --global init.defaultBranch main && \
     git config --global user.name "Oleg Kizyma" && \

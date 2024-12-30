@@ -33,11 +33,13 @@ export POETRY_HOME="/root/.local/poetry"
 export POETRY_CACHE_DIR="/root/.cache/poetry"
 export POETRY_VIRTUALENVS_PATH="/root/DOK/.venv"
 export POETRY_VIRTUALENVS_CREATE=true
-
-# Poetry and Python paths
 export POETRY_VIRTUALENVS_IN_PROJECT=true
-export PYTHONPATH=/app
-export PATH="/app/.venv/bin:$PATH"
+export PATH="$POETRY_HOME/bin:$PATH"
+
+# Python paths
+export PYTHONPATH="/root/DOK"
+export VIRTUAL_ENV="/root/DOK/.venv"
+export PATH="$VIRTUAL_ENV/bin:$PATH"
 
 # Environment
 export LANG=en_US.UTF-8
