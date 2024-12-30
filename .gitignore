@@ -1,0 +1,37 @@
+# Cache
+.cache/
+**/.cache/
+**/pre-commit/
+*.patch
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+
+# JavaScript
+node_modules/
+npm-debug.log
+
+# IDE
+.vscode/
+.vscode-server/
+.history/
+
+# Logs & temp
+*.log
+tmp/
+.tmp/
+logs/
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# Test coverage
+.coverage
+htmlcov/
+coverage.xml
+.pytest_cache/
