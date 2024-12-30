@@ -1,0 +1,14 @@
+[include]
+	path = /home/dev/DEV/vscode-remote-try-python/.gitconfig
+[credential]
+	helper = "!f() { /root/.vscode-server/bin/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/node /tmp/vscode-remote-containers-9e19613d-8921-4d49-8411-9e98c154d205.js git-credential-helper $*; }; f"
+[user]
+	name = Oleg Kizyma
+	email = oleg1203@gmail.com
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
