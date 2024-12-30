@@ -28,6 +28,12 @@ alias dcr='sudo docker compose restart'
 # Prompt
 export PS1="${RED}\$(parse_git_branch)${RESET}${GREEN}KOD${RESET}${BLUE}\w${YELLOW}\$ ${RESET}"
 
+# Git configuration
+export GIT_AUTHOR_NAME="Oleg Kizyma"
+export GIT_AUTHOR_EMAIL="oleg1203@gmail.com"
+export GIT_COMMITTER_NAME="Oleg Kizyma"
+export GIT_COMMITTER_EMAIL="oleg1203@gmail.com"
+
 # Poetry configuration
 export POETRY_HOME="/root/.local/poetry"
 export POETRY_CACHE_DIR="/root/.cache/poetry"
